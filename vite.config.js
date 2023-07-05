@@ -14,9 +14,5 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
-    build: {
-      base: "/",
-      assetsDir: "public",
-    },
   },
 });
