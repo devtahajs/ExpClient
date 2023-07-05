@@ -1,0 +1,58 @@
+.recentContainer {
+  height: 40vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  overflow: scroll;
+}
+.secContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 50%;
+}
+.recentContainer h4 {
+  font-size: 16px;
+  padding: 5px;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.281);
+}
+.content h5 {
+  font-size: 18px;
+  padding: 2px;
+}
+.inner-content {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  gap: 5px;
+}
+.btn-con button {
+  font-size: 22px;
+  color: red;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  background: none;
+}
+
+@media (max-width: 786px) {
+  .secContainer {
+    width: 98%;
+  }
+}
