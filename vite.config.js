@@ -10,7 +10,7 @@ export default defineConfig({
     proxy: {
       //setting default proxy http
       "/api": {
-        target: "https://exp-server-five.vercel.app/",
+        target: "https://exp-server-five.vercel.app",
         changeOrigin: true,
       },
     },
