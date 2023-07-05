@@ -1,7 +1,7 @@
 import React from "react";
-import Balance from "../../Components/HomeComps/Balance";
-import Recents from "../../Components/HomeComps/recents";
-import Addings from "../../Components/HomeComps/addings";
+import Balance from "../../Components/HomeComps/Balance.jsx";
+import Recents from "../../Components/HomeComps/recents.jsx";
+import Addings from "../../Components/HomeComps/Addings.jsx";
 
 const HomePage = () => {
   return (
