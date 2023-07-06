@@ -6,7 +6,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Login
     login: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/login`,
+        url: "https://exp-server-mikj.onrender.com/api/users/login",
         method: "POST",
         body: data,
       }),
