@@ -14,7 +14,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Register
     register: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/`,
+        url: "https://exp-server-mikj.onrender.com/api/users/",
         method: "POST",
         body: data,
       }),
@@ -22,14 +22,14 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Logout
     logout: builder.mutation({
       query: () => ({
-        url: `${USERS_URL}/logout`,
+        url: "https://exp-server-mikj.onrender.com/api/users/logout",
         method: "POST",
       }),
     }),
     //Update
     update: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/update`,
+        url: "https://exp-server-mikj.onrender.com/api/users/update",
         method: "PUT",
         body: data,
       }),
@@ -37,7 +37,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Add Income
     addincome: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/addincome`,
+        url: "https://exp-server-mikj.onrender.com/api/users/addincome",
         method: "POST",
         body: data,
       }),
@@ -45,21 +45,21 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Income
     getincome: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/get-income`,
+        url: "https://exp-server-mikj.onrender.com/api/users/get-income",
         method: "GET",
       }),
     }),
     //Delete Income
     deleteincome: builder.mutation({
       query: (id) => ({
-        url: `${USERS_URL}/delete-income/${id}`,
+        url: `https://exp-server-mikj.onrender.com/api/users/delete-income/${id}`,
         method: "DELETE",
       }),
     }),
     //Add Expense
     addexpense: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/addexpense`,
+        url: "https://exp-server-mikj.onrender.com/api/users/addexpense",
         method: "POST",
         body: data,
       }),
@@ -67,14 +67,14 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Expense
     getexpense: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/get-expense`,
+        url:  "https://exp-server-mikj.onrender.com/api/users/get-expense",
         method: "GET",
       }),
     }),
     //Delete expense
     deleteexpense: builder.mutation({
       query: (id) => ({
-        url: `${USERS_URL}/delete-expense/${id}`,
+        url:  `https://exp-server-mikj.onrender.com/api/users/delete-expense/${id}`,
         method: "DELETE",
       }),
     }),
