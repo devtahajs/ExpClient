@@ -81,7 +81,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get All Transactions
     alltransaction: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/alltransaction`,
+        url: "https://exp-server-mikj.onrender.com/api/users/alltransaction",
         method: "GET",
       }),
     }),
