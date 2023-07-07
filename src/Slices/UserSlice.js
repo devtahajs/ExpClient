@@ -5,7 +5,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Login
     login: builder.mutation({
       query: (data) => ({
-        url: "/api/users/login/",
+        url: "https://exp-server-mikj.onrender.com/api/users/login/",
         method: "POST",
         body: data,
       }),
@@ -21,7 +21,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Logout
     logout: builder.mutation({
       query: () => ({
-        url: "/api/users/logout",
+        url: "https://exp-server-mikj.onrender.com/api/users/logout",
         method: "POST",
       }),
     }),
@@ -80,7 +80,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get All Transactions
     alltransaction: builder.mutation({
       query: (data) => ({
-        url: "/api/users/alltransaction/",
+        url: "https://exp-server-mikj.onrender.com/api/users/alltransaction/",
         method: "GET",
       }),
     }),
