@@ -61,7 +61,7 @@ const Navbar = () => {
               Login
             </Link>
             <Link to="/" className="button2">
-              Register
+              Register Now
             </Link>
           </div>
         )}
