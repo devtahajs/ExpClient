@@ -44,13 +44,14 @@ const Navbar = () => {
           <>
             <div className="logout">
               <h4>{userInfo.name}</h4>
-              <Link to="/home" className="button1">
+              <Link to="/home" className="button3">
                 {dashboard}
               </Link>
-              <Link to="/profile" className="button2">
+              <Link to="/profile"
+               className="button4">
                 {users}
               </Link>
-              <button className="button3" onClick={logoutHandler}>
+              <button className="button5" onClick={logoutHandler}>
                 {out}
               </button>
             </div>
