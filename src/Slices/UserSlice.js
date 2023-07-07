@@ -5,7 +5,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Login
     login: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/login/",
+        url: "http://localhost:5001/api/users/login/",
         method: "POST",
         body: data,
       }),
@@ -13,7 +13,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Register
     register: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/",
+        url: "http://localhost:5001/api/users/",
         method: "POST",
         body: data,
       }),
@@ -21,14 +21,14 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Logout
     logout: builder.mutation({
       query: () => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/logout",
+        url: "http://localhost:5001/api/users/logout",
         method: "POST",
       }),
     }),
     //Update
     update: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/update",
+        url: "http://localhost:5001/api/users/update",
         method: "PUT",
         body: data,
       }),
@@ -36,7 +36,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Add Income
     addincome: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/addincome",
+        url: "http://localhost:5001/api/users/addincome",
         method: "POST",
         body: data,
       }),
@@ -44,21 +44,21 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Income
     getincome: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/get-income/",
+        url: "http://localhost:5001/api/users/get-income/",
         method: "GET",
       }),
     }),
     //Delete Income
     deleteincome: builder.mutation({
       query: (id) => ({
-        url: `https://exp-server-mikj.onrender.com/api/users/delete-income/${id}`,
+        url: `http://localhost:5001/api/users/delete-income/${id}`,
         method: "DELETE",
       }),
     }),
     //Add Expense
     addexpense: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/addexpense/",
+        url: "http://localhost:5001/api/users/addexpense/",
         method: "POST",
         body: data,
       }),
@@ -66,21 +66,21 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Expense
     getexpense: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/get-expense/",
+        url: "http://localhost:5001/api/users/get-expense/",
         method: "GET",
       }),
     }),
     //Delete expense
     deleteexpense: builder.mutation({
       query: (id) => ({
-        url: `https://exp-server-mikj.onrender.com/api/users/delete-expense/${id}/`,
+        url: `http://localhost:5001/api/users/delete-expense/${id}/`,
         method: "DELETE",
       }),
     }),
     //get All Transactions
     alltransaction: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/alltransaction/",
+        url: "http://localhost:5001/api/users/alltransaction/",
         method: "GET",
       }),
     }),

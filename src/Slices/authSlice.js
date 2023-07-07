@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
 //Variable for intial State
 // if userInfo is present in localstorage parse it if not set null
 const initialState = {
@@ -28,6 +27,7 @@ const authSlice = createSlice({
       state.userInfo = action.payload;
     },
     GetIncome: (state, action) => {
+      console.log(action.payload);
       state.userInfo = action.payload;
     },
   },

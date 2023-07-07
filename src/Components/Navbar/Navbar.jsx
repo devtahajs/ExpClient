@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../../Slices/UserSlice";
 import { logout } from "../../Slices/authSlice.js";
+
+import { out, account, dashboard, rupee, users } from "../../utils/Icons.jsx";
 import { toast } from "react-toastify";
 import "./Navbar.css";
 
@@ -43,13 +45,13 @@ const Navbar = () => {
             <div className="logout">
               <h4>{userInfo.name}</h4>
               <Link to="/home" className="button1">
-                Home
+                {dashboard}
               </Link>
               <Link to="/profile" className="button2">
-                Profile
+                {users}
               </Link>
               <button className="button1" onClick={logoutHandler}>
-                Logout
+                {out}
               </button>
             </div>
           </>
