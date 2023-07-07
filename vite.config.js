@@ -12,6 +12,7 @@ export default defineConfig({
       "/api": {
         target: "https://exp-server-mikj.onrender.com",
         changeOrigin: true,
+    // rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

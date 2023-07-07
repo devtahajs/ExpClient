@@ -1,12 +1,11 @@
 import { apiSlice } from "./apiSlice.js";
-const USERS_URL = "/api/users";
 
 export const userApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     //Login
     login: builder.mutation({
       query: (data) => ({
-        url: `${USERS_URL}/login`,
+        url: "/api/users/login/",
         method: "POST",
         body: data,
       }),
@@ -14,7 +13,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Register
     register: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/",
+        url: "/api/users/",
         method: "POST",
         body: data,
       }),
@@ -22,14 +21,14 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Logout
     logout: builder.mutation({
       query: () => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/logout",
+        url: "/api/users/logout",
         method: "POST",
       }),
     }),
     //Update
     update: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/update",
+        url: "/api/users/update",
         method: "PUT",
         body: data,
       }),
@@ -37,7 +36,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //Add Income
     addincome: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/addincome",
+        url: "/api/users/addincome",
         method: "POST",
         body: data,
       }),
@@ -45,21 +44,21 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Income
     getincome: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/get-income",
+        url: "/api/users/get-income/",
         method: "GET",
       }),
     }),
     //Delete Income
     deleteincome: builder.mutation({
       query: (id) => ({
-        url: `https://exp-server-mikj.onrender.com/api/users/delete-income/${id}`,
+        url: `/api/users/delete-income/${id}`,
         method: "DELETE",
       }),
     }),
     //Add Expense
     addexpense: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/addexpense",
+        url: "/api/users/addexpense/",
         method: "POST",
         body: data,
       }),
@@ -67,45 +66,45 @@ export const userApiSlice = apiSlice.injectEndpoints({
     //get Expense
     getexpense: builder.mutation({
       query: (data) => ({
-        url:  "https://exp-server-mikj.onrender.com/api/users/get-expense",
+        url: "/api/users/get-expense/",
         method: "GET",
       }),
     }),
     //Delete expense
     deleteexpense: builder.mutation({
       query: (id) => ({
-        url:  `https://exp-server-mikj.onrender.com/api/users/delete-expense/${id}`,
+        url: `/api/users/delete-expense/${id}/`,
         method: "DELETE",
       }),
     }),
     //get All Transactions
     alltransaction: builder.mutation({
       query: (data) => ({
-        url: "https://exp-server-mikj.onrender.com/api/users/alltransaction",
+        url: "/api/users/alltransaction/",
         method: "GET",
       }),
     }),
-    //get All Income Ampunt
-    incomeAmount: builder.mutation({
-      query: (data) => ({
-        url: `${USERS_URL}/allincome`,
-        method: "GET",
-      }),
-    }),
-    //get All expense Ampunt
-    expenseAmount: builder.mutation({
-      query: (data) => ({
-        url: `${USERS_URL}/allexpense`,
-        method: "GET",
-      }),
-    }),
+    // //get All Income Ampunt
+    // incomeAmount: builder.mutation({
+    //   query: (data) => ({
+    //     url: `${USERS_URL}/allincome`,
+    //     method: "GET",
+    //   }),
+    // }),
+    // //get All expense Ampunt
+    // expenseAmount: builder.mutation({
+    //   query: (data) => ({
+    //     url: `${USERS_URL}/allexpense`,
+    //     method: "GET",
+    //   }),
+    // }),
     //get Total Ampunt
-    totalAmount: builder.mutation({
-      query: (data) => ({
-        url: `${USERS_URL}/total`,
-        method: "GET",
-      }),
-    }),
+    // totalAmount: builder.mutation({
+    //   query: (data) => ({
+    //     url: `${USERS_URL}/total`,
+    //     method: "GET",
+    //   }),
+    // }),
   }),
 });
 
