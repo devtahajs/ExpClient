@@ -19,7 +19,7 @@ body {
 
 .App {
   overflow: hidden;
-  background-image: url(../public/imgs/img1.png);
+  background-image: url(../public/imgs/img1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
