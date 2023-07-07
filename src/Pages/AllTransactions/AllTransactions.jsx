@@ -40,7 +40,7 @@ const Recents = () => {
   return (
     <div className="AllContainer">
       <div className="secContainer">
-        <h4>Recent Transactions--</h4>
+        <h4 className="title">Recent Transactions--</h4>
 
         {userInfoArray.map((income) => (
           <div className="content" key={income._id}>
