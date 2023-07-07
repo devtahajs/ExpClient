@@ -4,7 +4,7 @@ export const categories = <i className="fa-solid fa-tags"></i>;
 export const account = <i className="fa-solid fa-wallet"></i>;
 export const settings = <i className="fa-solid fa-cog"></i>;
 export const out = <i class="fa-solid fa-arrow-right-from-bracket"></i>;
-export const trend = <i className="fa-solid fa-money-bill-trend-up"></i>;
+export const trend = <i class="fa-solid fa-chart-line-up"></i>
 export const expenses = <i class="fa-solid fa-square-up"></i>;
 export const money = <i class="fa-solid fa-money-simple-from-bracket"></i>;
 export const freelance = <i className="fa-solid fa-earth-americas"></i>;

@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../../Slices/UserSlice";
 import { logout } from "../../Slices/authSlice.js";
 
-import { out, account, dashboard, rupee, users } from "../../utils/Icons.jsx";
+import { out, trend, dashboard, rupee, users } from "../../utils/Icons.jsx";
 import { toast } from "react-toastify";
 import "./Navbar.css";
 
@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className="NavContainer">
       <div className="leftside">
-        <h4>Expense Tracker App</h4>
+        <h4>{trend}Expense Tracker App</h4>
       </div>
 
       <div className="rightside">
@@ -50,7 +50,7 @@ const Navbar = () => {
               <Link to="/profile" className="button2">
                 {users}
               </Link>
-              <button className="button1" onClick={logoutHandler}>
+              <button className="button3" onClick={logoutHandler}>
                 {out}
               </button>
             </div>
