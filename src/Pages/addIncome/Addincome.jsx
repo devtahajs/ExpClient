@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useAddincomeMutation } from "../../Slices/UserSlice";
 import { addIncome } from "../../Slices/Income/IncomedataSlice.js";
 import { toast } from "react-toastify";
+import "./Addincome.css";
 
 const Addincome = () => {
   const [title, setTitle] = useState("");
@@ -54,12 +55,14 @@ const Addincome = () => {
         />
 
         <input
+          className="dateinput"
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
 
         <select
+          className="dateinput"
           required
           value={category}
           name="category"
@@ -69,13 +72,12 @@ const Addincome = () => {
           <option value="" disabled>
             Select Option
           </option>
-          <option value="salary">Salary</option>
-          <option value="freelancing">Freelancing</option>
-          <option value="investments">Investiments</option>
-          <option value="stocks">Stocks</option>
-          <option value="bitcoin">Bitcoin</option>
-          <option value="bank">Bank Transfer</option>
-          <option value="youtube">Youtube</option>
+          <option value="Bussiness">Bussiness</option>
+          <option value="Metal Work">Metal Work</option>
+          <option value="Other Side Works">Other Side Works</option>
+          <option value="cash">cash</option>
+          <option value="ss/pvd">ss/Pvd</option>
+          <option value="commission">commission</option>
           <option value="other">Other</option>
         </select>
         <button className="button1">Add</button>

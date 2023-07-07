@@ -54,12 +54,15 @@ const Addincome = () => {
         />
 
         <input
+          className="dateinput"
+          placeholder="Choose Date"
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
 
         <select
+          className="dateinput"
           required
           value={category}
           name="category"
@@ -69,14 +72,15 @@ const Addincome = () => {
           <option value="" disabled>
             Select Option
           </option>
-          <option value="salary">Salary</option>
-          <option value="freelancing">Freelancing</option>
-          <option value="investments">Investiments</option>
-          <option value="stocks">Stocks</option>
-          <option value="bitcoin">Bitcoin</option>
-          <option value="bank">Bank Transfer</option>
-          <option value="youtube">Youtube</option>
-          <option value="other">Other</option>
+          <option value="work related">Work Related</option>
+          <option value="Labour">Labour</option>
+          <option value="repair">Repair</option>
+          <option value="personal">Personal</option>
+          <option value="food">Food</option>
+          <option value="house">House</option>
+          <option value="Maa ">Maa</option>
+          <option value="Grocery">Grocery</option>
+          <option value="health">health</option>
         </select>
         <button className="button1">Add</button>
         <div>
